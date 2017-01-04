@@ -1,5 +1,8 @@
 # CommentList
 评论列表
+# 效果图
+![截图](/img.png)
+# 使用方法
 - 实现BaseComment接口的以下方法即可快速实现评论列表
 <pre><code>String get2ReplyUserRealName();
     String get2ReplyUserId();
