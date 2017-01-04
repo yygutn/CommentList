@@ -6,7 +6,9 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.3'
-
+        classpath 'com.novoda:bintray-release:0.3.4'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:+'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -15,6 +17,24 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+//        def REPOSITORY_URL = 'http://jcenter.bintray.com/'
+//        all { ArtifactRepository repo ->
+//            println repo.url.toString()
+//            if ((repo instanceof MavenArtifactRepository) && repo.url.toString().startsWith("https://jcenter.bintray.com/")) {
+//                project.logger.lifecycle "Repository ${repo.url} replaced by $REPOSITORY_URL."
+//                remove repo
+//            }
+//        }
+//        jcenter {
+//            url REPOSITORY_URL
+//        }
+    }
+    //加上这些
+    tasks.withType(Javadoc) {
+        options{ encoding "UTF-8"
+            charSet 'UTF-8'
+            links "http://docs.oracle.com/javase/7/docs/api"
+        }
     }
 }
 
