@@ -1,7 +1,9 @@
 # CommentList
 评论列表
 # 效果图
-![截图](/img/img.png)
+- 使用AS的View查看器截的图，所以略显丑陋
+
+![截图](https://github.com/yygutn/CommentList/blob/master/img/img.png)
 # 使用方法
 - 实现BaseComment接口的以下方法即可快速实现评论列表
 <pre><code>String get2ReplyUserRealName();
