@@ -10,3 +10,5 @@
     String getCommentId();
 </pre></code>
 - 调用CommentListView的setData方法
+
+- 如有不明白，请看Demo
