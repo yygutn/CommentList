@@ -5,6 +5,8 @@
 
 ![截图](https://github.com/yygutn/CommentList/blob/master/img/img.png)
 # 使用方法
+- Gradle
+<pre><code>compile 'com.jumy.commentList:commentListView:1.0.0'</pre></code>
 - 实现BaseComment接口的以下方法即可快速实现评论列表
 <pre><code>String get2ReplyUserRealName();
     String get2ReplyUserId();
