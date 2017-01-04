@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:id="@+id/digCommentBody"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/im_distribute_comm_bg"
+        android:minHeight="10dip"
+        android:orientation="vertical"
+        android:paddingBottom="8dip"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dip"
+        android:paddingTop="12dip">
+
+        <com.jumy.library.commentList.CommentListView
+            android:id="@+id/mCommentList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:item_color="#286CA4" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/mRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="刷新" />
+</LinearLayout>
